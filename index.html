@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>validation</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css    ">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        
+        <div class="formsection">
+            
+        <form action="" method="POST" id="registration">
+            <p  class="pTagForm">Add personal information</p>
+            <div class="inputdiv">
+                <label for="username">Username</label>
+                <input type="text" name="username" id="username" placeholder="Username">
+                <span class="error-text" id="error_username"></span>
+            </div>
+            <div class="inputdiv">
+                <label for="emailmy">Enter your email</label>
+                <input type="email" name="emailme" placeholder="email" id="emailmy"  onkeydown="validation()">
+                <span id="emailText"></span>
+            </div>
+            <div class="inputdiv">
+                <label for="age">Chose your age</label>
+                <input type="radio" name="age" id="age1">
+                <label for="age1">20-25</label>
+                <input type="radio" name="age" id="age2">
+                <label for="age2">25-35</label>
+                <span class="error-text" id="error_age"></span>
+    
+            </div>
+            <div class="inputdiv">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="password" placeholder="password">
+                <span class="error-text" id="error_password"></span>
+    
+            </div>
+            <div class="inputdiv">
+                <label for="password2">Repeat Password</label>
+                <input type="password" name="password2" id="password2" placeholder="Repeat Password">
+                <i id="toggleicon" class="fa-solid fa-eye"></i>
+                <span class="error-text" id="error_password2"></span>
+    
+            </div>
+    
+    
+            <div class="inputdiv">
+                <input type="checkbox" name="agree" id="checkagree">
+                <label for="checkagree"> i agree conditions</label>
+                <span class="error-text" id="error_agree"></span>
+    
+            </div>
+            <button type="submit">send</button>
+         </form>
+        </div>
+    </section>
+    
+    
+
+
+    <!-- </form>
+
+    <div>
+        <input type="password" id="showpassword" name="showpassword" placeholder="Enter your password">
+        <i id="toggleicon" class="fa-solid fa-eye"></i>
+    </div>
+    <form action="">
+        <div>
+            <input type="email" name="emailme" placeholder="email" id="emailmy"  onkeydown="validation()">
+            <span id="emailText"></span>
+        </div>
+        <button type="submit"> send </button>
+    
+    </form> -->
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
